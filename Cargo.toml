@@ -1,0 +1,8 @@
+[package]
+name = "anagram_game"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+random_word = { version = "0.5.2", features = ["en"] }
+swappy = "2.0.0"
