@@ -2,14 +2,7 @@ use swappy::{find_anagrams, load_wordlist_from_file};
 use rand::seq::SliceRandom;
 use rand::thread_rng;
 
-// use random_word::Lang;
-
 fn main() {
-    // let mut word_list: Vec<String> = random_word::all(Lang::En).iter()
-    //     .map(|s| s.to_string())
-    //     .collect();
-    // word_list.retain(|word| word.len() >= 4);
-    // let word = random_word::get(Lang::En);
 
     let mut word_list: Vec<String>  = load_wordlist_from_file("wordlist.txt").expect("Could not load wordlist");
     word_list.retain(|word| word.len() >= 4);
@@ -35,4 +28,4 @@ fn main() {
     println!("Word to guess: {}", word);
     println!("Anagram found: {}", anagram);
     
-}
+} // end fn main
